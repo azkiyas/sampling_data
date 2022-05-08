@@ -9,16 +9,15 @@ wget -P loc_folder "alamat url"
 ```
 
 2. Di dalam folder data convert setiap sheet pada file weather_data.xlsx menjadi:
-
-i. Sheet weather_2014 menjadi file weather_2014.csv
-ii. Sheet weather_2015 menjadi file weather_2015.csv
+   --Sheet weather_2014 menjadi file weather_2014.csv
+   --Sheet weather_2015 menjadi file weather_2015.csv
 
 ``` bash
 in2csv nama_file --sheet "nama_sheet" > nama_file_baru
 ```
 
 3. Menggabungkan Data weather 2014 dan 2015 menjadi 1 csv kemudian beri nama
-weather.csv. Selain itu hapus file weather_data.xlsx
+weather.csv.
 
 ``` bash
 csvstack nama_file1 nama_file2 > nama_file_baru
